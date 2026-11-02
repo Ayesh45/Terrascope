@@ -1,0 +1,5 @@
+method,area_km2,pixels_flagged,precision,recall,F1,IoU,balanced_accuracy,reference_pixels,interpretation
+NDVI_only,6.0,96,0.9895833333333334,0.4377880184331797,0.6070287539936101,0.43577981651376146,0.7169709322935129,477,"Simple greenness-trend baseline; can miss resilience, rainfall-adjusted and radar-only signals."
+NDVI_plus_RESTREND,6.06,97,0.9896907216494846,0.4423963133640553,0.6114649681528662,0.44036697247706424,0.7192750797589508,477,Adds a simple rainfall-adjusted residual trend to the NDVI baseline.
+Optical_plus_resilience,6.06,97,0.9896907216494846,0.4423963133640553,0.6114649681528662,0.44036697247706424,0.7192750797589508,477,Adds recovery-lag evidence but remains dependent on optical greenness.
+Four_layer_fusion,10.75,172,0.8417721518987342,0.6129032258064516,0.7093333333333335,0.5495867768595041,0.7583746898263027,477,"Combines greenness, recovery, rainfall-adjusted residuals and SAR structural-change evidence."

@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-11-02T13:02:44",
+  "study_area": "A:\\sem 7\\img and vid\\final-final\\finnnnnnaaaaaaaallllll\\runs\\9d5d17031a69\\study_area.geojson",
+  "crs": "EPSG:32644",
+  "grid": {
+    "rows": 30,
+    "columns": 32,
+    "requested_scale_m": 250,
+    "bounds_projected": [
+      411160.5266359097,
+      1411806.6065355588,
+      418843.5400521525,
+      1418867.9456497242
+    ]
+  },
+  "datasets": {
+    "ndvi.tif": {
+      "collection": "MODIS/061/MOD13Q1",
+      "bands": "monthly NDVI composites from product NDVI band, SummaryQA <= 1",
+      "period": [
+        2001,
+        2025
+      ],
+      "units": "unitless NDVI, scaled by 0.0001",
+      "used_for": [
+        "Layer 1 annual greenness trend",
+        "Layer 2 recovery anomalies",
+        "Layer 3 rainfall-adjusted residual trend"
+      ],
+      "limitations": "MODIS is a coarser-resolution long-term baseline; quality filtering does not eliminate every atmospheric or compositing artefact."
+    },
+    "rain.tif": {
+      "collection": "UCSB-CHG/CHIRPS/DAILY",
+      "bands": "monthly sum of daily precipitation",
+      "period": [
+        2001,
+        2025
+      ],
+      "units": "mm/month",
+      "used_for": [
+        "drought-year detection in Layer 2",
+        "rainfall adjustment in Layer 3",
+        "dry-season window selection for Layer 4 when sar_months is null"
+      ],
+      "limitations": "Rainfall is a gridded estimate and may not represent local microclimates or irrigation."
+    },
+    "vh.tif": {
+      "collection": "COPERNICUS/S1_GRD",
+      "bands": "monthly median VH backscatter, descending IW acquisitions",
+      "period": [
+        2017,
+        2025
+      ],
+      "units": "dB backscatter; seasonal trend is relative VH dB/year after annual spatial-median adjustment",
+      "used_for": [
+        "Layer 4 relative seasonal structural-change trend"
+      ],
+      "limitations": "Backscatter also responds to moisture, surface roughness, geometry and acquisition conditions."
+    },
+    "s2_ndvi.tif": {
+      "collection": "COPERNICUS/S2_SR_HARMONIZED",
+      "bands": "monthly median NDVI after SCL and QA60 cloud/cirrus masking",
+      "period": [
+        2017,
+        2025
+      ],
+      "units": "unitless NDVI",
+      "used_for": [
+        "recent high-resolution visual preview and image-quality context"
+      ],
+      "limitations": "This supplementary stack is not substituted for the MODIS long-term series in the four analytical layers."
+    }
+  },
+  "missing_value": -9999,
+  "important_note": "NoData represents unavailable observations, not zero vegetation, zero rainfall or no degradation."
+}

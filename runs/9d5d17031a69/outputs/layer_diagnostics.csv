@@ -1,0 +1,5 @@
+layer,flagged_pixels,flagged_area_km2,valid_slope_pixels,median_slope,slope_unit,p_threshold
+L1_NDVI_SenSlope_per_year,96,6.0,610,0.0038899015635252,NDVI/year,0.05
+L2_recovery_lag_slope_per_year,0,0.0,380,0.0045427726581692696,months/year,0.1
+L3_RESTREND_residual_slope_per_year,95,5.94,610,0.003705289214849472,NDVI residual/year,0.05
+L4_SAR_relative_slope_per_year,100,6.25,615,-0.02568974532186985,relative VH units/year,0.05

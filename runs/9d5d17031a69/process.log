@@ -1,0 +1,291 @@
+Step 1/3: Retrieving monthly satellite and rainfall data
+ndvi: months 1-36/300
+ndvi: months 37-72/300
+ndvi: months 73-108/300
+ndvi: months 109-144/300
+ndvi: months 145-180/300
+ndvi: months 181-216/300
+ndvi: months 217-252/300
+ndvi: months 253-288/300
+ndvi: months 289-300/300
+Saved A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\ndvi.tif (300, 29, 32)
+rain: months 1-36/300
+rain: months 37-72/300
+rain: months 73-108/300
+rain: months 109-144/300
+rain: months 145-180/300
+rain: months 181-216/300
+rain: months 217-252/300
+rain: months 253-288/300
+rain: months 289-300/300
+Saved A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\rain.tif (300, 29, 32)
+vh: months 1-12/108
+vh: months 13-24/108
+vh: months 25-36/108
+vh: months 37-48/108
+vh: months 49-60/108
+vh: months 61-72/108
+vh: months 73-84/108
+vh: months 85-96/108
+vh: months 97-108/108
+Saved A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\vh.tif (108, 29, 32)
+s2_ndvi: months 1-12/108
+s2_ndvi: months 13-24/108
+s2_ndvi: months 25-36/108
+s2_ndvi: months 37-48/108
+s2_ndvi: months 49-60/108
+s2_ndvi: months 61-72/108
+s2_ndvi: months 73-84/108
+s2_ndvi: months 85-96/108
+s2_ndvi: months 97-108/108
+Saved A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\s2_ndvi.tif (108, 29, 32)
+Saved original Sentinel-2 true-colour image: A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\s2_rgb_original.tif
+Saved data dictionary: A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\runs\9d5d17031a69\data\data_catalog.json
+Step 2/3: Preprocessing downloaded data
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\preprocessing.py:119: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig, ax = plt.subplots(figsize=(7, 6))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\preprocessing.py:139: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig, ax = plt.subplots(figsize=(7, 6))
+Step 3/4: Running four-layer analysis and method comparison
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:125: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag1),["#d62728"],"L1 NDVI trend"); fig.savefig(out/"layer1_ndvi_trend.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:182: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag2),["#9467bd"],"L2 Recovery lag"); fig.savefig(out/"layer2_recovery_lag.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:199: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag3),["#ff7f0e"],"L3 RESTREND residual"); fig.savefig(out/"layer3_restrend.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:210: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag4),["#1f77b4"],"L4 SAR structure"); fig.savefig(out/"layer4_sar_structure.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:378: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(8,4.5))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:391: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig, axcov = plt.subplots(figsize=(6.5, 4))
+Using cropped Leaflet pentagon screenshot (826x785) at the user's drawn map zoom.
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:474: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(2,4,figsize=(18,9))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+{
+  "study_period": [
+    2001,
+    2025
+  ],
+  "valid_pixels": 615,
+  "valid_area_km2": 38.44,
+  "degraded_area_km2": 10.75,
+  "degraded_pct_of_valid": 27.97,
+  "detected_by_baseline_km2": 6.0,
+  "missed_by_baseline_km2": 4.75,
+  "missed_pct_of_degraded": 44.19,
+  "by_layer_km2": {
+    "L1 NDVI trend": 6.0,
+    "L2 Recovery lag": 0.0,
+    "L3 RESTREND residual": 5.94,
+    "L4 SAR structure": 6.25
+  },
+  "by_driver_km2": {
+    "NDVI-only signal": 0.12,
+    "Rainfall-adjusted or SAR signal (heuristic)": 10.62,
+    "Recovery-lag signal (priority heuristic)": 0.0
+  },
+  "high_confidence_km2": 5.94,
+  "sar_down_ndvi_stable_km2": 6.0,
+  "diagnostics": {
+    "median_ndvi_slope_per_year": 0.0038899015635252,
+    "median_recovery_lag_slope_months_per_year": 0.0045427726581692696,
+    "median_restrend_slope_per_year": 0.003705289214849472,
+    "median_sar_relative_slope_per_year": -0.02568974532186985,
+    "sar_years_used": 9,
+    "sar_months": [
+      2,
+      3,
+      4
+    ],
+    "pct_pixels_with_enough_drought_events": 0.0,
+    "pixels_with_valid_ndvi": 610,
+    "pixels_with_valid_rainfall": 615,
+    "pixels_with_valid_sar": 615
+  },
+  "method_comparison": {
+    "NDVI_only": {
+      "area_km2": 6.0,
+      "pixels_flagged": 96,
+      "interpretation": "Simple greenness-trend baseline; can miss resilience, rainfall-adjusted and radar-only signals."
+    },
+    "NDVI_plus_RESTREND": {
+      "area_km2": 6.06,
+      "pixels_flagged": 97,
+      "interpretation": "Adds a simple rainfall-adjusted residual trend to the NDVI baseline."
+    },
+    "Optical_plus_resilience": {
+      "area_km2": 6.06,
+      "pixels_flagged": 97,
+      "interpretation": "Adds recovery-lag evidence but remains dependent on optical greenness."
+    },
+    "Four_layer_fusion": {
+      "area_km2": 10.75,
+      "pixels_flagged": 172,
+      "interpretation": "Combines greenness, recovery, rainfall-adjusted residuals and SAR structural-change evidence."
+    },
+    "additional_area_vs_NDVI_km2": 4.75,
+    "additional_pixels_vs_NDVI": 76,
+    "reference_validation_available": false,
+    "reference_metrics": null,
+    "comparison_warning": "Larger mapped area is not proof of higher accuracy. Use independent reference labels or field validation to compare precision, recall, F1 and IoU."
+  }
+}
+Step 4/4: Retrieving regional Trends.Earth SDG 15.3.1 reference data
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:125: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag1),["#d62728"],"L1 NDVI trend"); fig.savefig(out/"layer1_ndvi_trend.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:182: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag2),["#9467bd"],"L2 Recovery lag"); fig.savefig(out/"layer2_recovery_lag.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:199: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag3),["#ff7f0e"],"L3 RESTREND residual"); fig.savefig(out/"layer3_restrend.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:210: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(6,6)); overlay(ax,grid(flag4),["#1f77b4"],"L4 SAR structure"); fig.savefig(out/"layer4_sar_structure.png",dpi=130,bbox_inches="tight"); plt.close(fig)
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:378: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(figsize=(8,4.5))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:391: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig, axcov = plt.subplots(figsize=(6.5, 4))
+Using cropped Leaflet pentagon screenshot (826x785) at the user's drawn map zoom.
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:474: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  fig,ax=plt.subplots(2,4,figsize=(18,9))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+A:\sem 7\img and vid\final-final\finnnnnnaaaaaaaallllll\layers.py:480: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  one_fig, one_ax = plt.subplots(figsize=(8, 8))
+{
+  "study_period": [
+    2001,
+    2025
+  ],
+  "valid_pixels": 615,
+  "valid_area_km2": 38.44,
+  "degraded_area_km2": 10.75,
+  "degraded_pct_of_valid": 27.97,
+  "detected_by_baseline_km2": 6.0,
+  "missed_by_baseline_km2": 4.75,
+  "missed_pct_of_degraded": 44.19,
+  "by_layer_km2": {
+    "L1 NDVI trend": 6.0,
+    "L2 Recovery lag": 0.0,
+    "L3 RESTREND residual": 5.94,
+    "L4 SAR structure": 6.25
+  },
+  "by_driver_km2": {
+    "NDVI-only signal": 0.12,
+    "Rainfall-adjusted or SAR signal (heuristic)": 10.62,
+    "Recovery-lag signal (priority heuristic)": 0.0
+  },
+  "high_confidence_km2": 5.94,
+  "sar_down_ndvi_stable_km2": 6.0,
+  "diagnostics": {
+    "median_ndvi_slope_per_year": 0.0038899015635252,
+    "median_recovery_lag_slope_months_per_year": 0.0045427726581692696,
+    "median_restrend_slope_per_year": 0.003705289214849472,
+    "median_sar_relative_slope_per_year": -0.02568974532186985,
+    "sar_years_used": 9,
+    "sar_months": [
+      2,
+      3,
+      4
+    ],
+    "pct_pixels_with_enough_drought_events": 0.0,
+    "pixels_with_valid_ndvi": 610,
+    "pixels_with_valid_rainfall": 615,
+    "pixels_with_valid_sar": 615
+  },
+  "method_comparison": {
+    "NDVI_only": {
+      "area_km2": 6.0,
+      "pixels_flagged": 96,
+      "interpretation": "Simple greenness-trend baseline; can miss resilience, rainfall-adjusted and radar-only signals."
+    },
+    "NDVI_plus_RESTREND": {
+      "area_km2": 6.06,
+      "pixels_flagged": 97,
+      "interpretation": "Adds a simple rainfall-adjusted residual trend to the NDVI baseline."
+    },
+    "Optical_plus_resilience": {
+      "area_km2": 6.06,
+      "pixels_flagged": 97,
+      "interpretation": "Adds recovery-lag evidence but remains dependent on optical greenness."
+    },
+    "Four_layer_fusion": {
+      "area_km2": 10.75,
+      "pixels_flagged": 172,
+      "interpretation": "Combines greenness, recovery, rainfall-adjusted residuals and SAR structural-change evidence."
+    },
+    "additional_area_vs_NDVI_km2": 4.75,
+    "additional_pixels_vs_NDVI": 76,
+    "reference_validation_available": true,
+    "reference_metrics": {
+      "NDVI_only": {
+        "n_reference_pixels": 477,
+        "TP": 95,
+        "FP": 1,
+        "FN": 122,
+        "TN": 259,
+        "accuracy": 0.7421383647798742,
+        "precision": 0.9895833333333334,
+        "recall": 0.4377880184331797,
+        "specificity": 0.9961538461538462,
+        "F1": 0.6070287539936101,
+        "IoU": 0.43577981651376146,
+        "balanced_accuracy": 0.7169709322935129
+      },
+      "NDVI_plus_RESTREND": {
+        "n_reference_pixels": 477,
+        "TP": 96,
+        "FP": 1,
+        "FN": 121,
+        "TN": 259,
+        "accuracy": 0.7442348008385744,
+        "precision": 0.9896907216494846,
+        "recall": 0.4423963133640553,
+        "specificity": 0.9961538461538462,
+        "F1": 0.6114649681528662,
+        "IoU": 0.44036697247706424,
+        "balanced_accuracy": 0.7192750797589508
+      },
+      "Optical_plus_resilience": {
+        "n_reference_pixels": 477,
+        "TP": 96,
+        "FP": 1,
+        "FN": 121,
+        "TN": 259,
+        "accuracy": 0.7442348008385744,
+        "precision": 0.9896907216494846,
+        "recall": 0.4423963133640553,
+        "specificity": 0.9961538461538462,
+        "F1": 0.6114649681528662,
+        "IoU": 0.44036697247706424,
+        "balanced_accuracy": 0.7192750797589508
+      },
+      "Four_layer_fusion": {
+        "n_reference_pixels": 477,
+        "TP": 133,
+        "FP": 25,
+        "FN": 84,
+        "TN": 235,
+        "accuracy": 0.7714884696016772,
+        "precision": 0.8417721518987342,
+        "recall": 0.6129032258064516,
+        "specificity": 0.9038461538461539,
+        "F1": 0.7093333333333335,
+        "IoU": 0.5495867768595041,
+        "balanced_accuracy": 0.7583746898263027
+      }
+    },
+    "comparison_warning": "Larger mapped area is not proof of higher accuracy. Use independent reference labels or field validation to compare precision, recall, F1 and IoU."
+  }
+}
